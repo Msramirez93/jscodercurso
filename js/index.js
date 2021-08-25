@@ -16,13 +16,13 @@ alert("Hola " + nombre + '! Bienvenidos/as a ' + miSitio);
 //numero3 =parseInt(prompt('introduzca otro numero entero:'));
 
 /*parseFloat*/
-//numero1 = parseFloat(prompt('introduzca un numero que contenga decimal'));
-//numero3= parseFloat(prompt('introduzca otro numero que contenga  decimal:'));
+numero1 = parseFloat(prompt('introduzca un numero que contenga decimal'));
+numero3= parseFloat(prompt('introduzca otro numero que contenga  decimal:'));
 
 /*operacion*/ 
-//numero2 = 200;
-//resultado = numero1 + numero2 +numero3;
-//alert(numero1 + ' + ' + numero2 + ' + ' +numero3+ ' = ' + resultado);
+numero2 = 200;
+resultado = numero1 + numero2 +numero3;
+alert(numero1 + ' + ' + numero2 + ' + ' +numero3+ ' = ' + resultado);
 //console.log(numero1 + ' + ' + numero2 +  ' + ' + numero3 + ' = ' + resultado);
 
 /*desafio 3*/
