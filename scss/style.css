@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  font-family: "Hina Mincho", serif;
+}
+
+h1, h2 {
+  font-size: 1.2rem;
+  color: red;
+}/*# sourceMappingURL=style.css.map */
