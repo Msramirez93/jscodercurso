@@ -1,13 +1,31 @@
 @import "home";
 @import "fonts";
 body{
+    font-size: 16px;
+    font-family: 'Hina Mincho', serif;
+    background-color: #222e50;
+    color: #121212;
     margin:0;
     padding: 0;
-    background-color: white;
-    font-family: 'Hina Mincho', serif;
 }
-h1,h2, li{
+header,
+main,
+footer{
+    max-width: 760px;
+    margin: 0 auto;
+}
+header, 
+footer{
+ border:1px solid #bbb;
+ padding: 1rem;
+ background-color: #bbacc1;
+}
+h2, li{
     
     font-size: 1.2rem;
-    color:black;
+    color:beige;
+}
+a{
+    text-decoration: none;
+    color: #121212;
 }

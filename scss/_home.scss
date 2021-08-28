@@ -1,24 +1,9 @@
-body{
-    font-size: 16px;
-    /*font-family: 'Times New Roman', Times, serif;
-    font-family: 'ABeeZee', sans-serif;*/
-    font-family: 'Acme', sans-serif;
-    /*font-family: 'Anton', sans-serif;*/
-}
-header,
-main,
-footer{
-    max-width: 760px;
-    margin: 0 auto;
-}
-header, 
-footer{
- border:1px solid #bbb;
- padding: 1rem;
- background-color: #bbacc1;
-}
-header img{
+.pag1{
      float:right;
      width: 200px;
      height: auto;
+     border: 2px solid #161b33;
+}
+.pag1:hover{
+    box-shadow: 0 0 40px #ffd1ba;
 }

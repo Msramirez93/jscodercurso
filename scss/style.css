@@ -1,10 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap");
+.pag1 {
+  float: right;
+  width: 200px;
+  height: auto;
+  border: 2px solid #161b33;
+}
+
+.pag1:hover {
+  box-shadow: 0 0 40px #ffd1ba;
+}
+
 body {
   font-size: 16px;
-  /*font-family: 'Times New Roman', Times, serif;
-  font-family: 'ABeeZee', sans-serif;*/
-  font-family: "Acme", sans-serif;
-  /*font-family: 'Anton', sans-serif;*/
+  font-family: "Hina Mincho", serif;
+  background-color: #222e50;
+  color: #121212;
+  margin: 0;
+  padding: 0;
 }
 
 header,
@@ -21,20 +33,12 @@ footer {
   background-color: #bbacc1;
 }
 
-header img {
-  float: right;
-  width: 200px;
-  height: auto;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  background-color: white;
-  font-family: "Hina Mincho", serif;
-}
-
-h1, h2, li {
+h2, li {
   font-size: 1.2rem;
-  color: black;
+  color: beige;
+}
+
+a {
+  text-decoration: none;
+  color: #121212;
 }/*# sourceMappingURL=style.css.map */
