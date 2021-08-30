@@ -16,12 +16,13 @@ if(numero1 > 3000){
 //Pedir un texto mediante prompt, y si es igual a "Hola" mostrar un alerta por consola.
 
 /*ejercicio 2*/
+/*texto = texto.toUpperCase(); (texto == "BANANA"); este es para usar mayusculas
+(texto == "Banana" || texto == "banana" || texto == "BANANA"); esta comentado para no ilvidar como funciona */
+
 //alert("ingrese un texto y si es igual a Banana se mostrara un Alert")
 //texto = prompt("Ingrese un texto:");
 //texto = texto.toLowerCase(); // HOLA hola hOAl hola Hola hola
-/*texto = texto.toUpperCase(); (texto == "BANANA"); este es para usar mayusculas
 
-(texto == "Banana" || texto == "banana" || texto == "BANANA");*/
 //if (texto == "banana") {
    //  alert("El que fue ingresado por el usuario fue 'Banana' :)");
      // console.log("El texto ingresado por el usuario fue 'Banana' :)");
