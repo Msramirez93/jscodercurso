@@ -1,6 +1,6 @@
 @import "home";
 @import "fonts";
-@import "clases";
+
 body{
     font-size: 16px;
     font-family: 'Hina Mincho', serif;
@@ -24,9 +24,32 @@ footer{
 h2, li{
     
     font-size: 1.2rem;
-    color:beige;
+    color: black;
 }
 a{
     text-decoration: none;
     color: #121212;
+}
+.headline1{
+    border-top: 5px double;
+    border-bottom: 5px double;
+    padding: 0.3em;
+    background-color: #222e50;
+    text-align: center;
+}
+.headline2{
+    background-color: #ffffff52;
+    color: #222e50;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.parClase2{
+    text-align: center;
+    background-color: #ffffff52;
+    color: #222e50;
+    font-size: 1.5rem;
+}
+.bodyClases{
+    background: url(../images/arte1.jpg);
+    object-fit: cover;
 }
