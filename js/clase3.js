@@ -36,8 +36,8 @@ while(textoConcatenar != 'STOP'){
 
 //Pedir un número por prompt, repetir la salida del mensaje “Hola” la cantidad de veces ingresada.
 
-/*let numero1 = parseInt(prompt("ingrese un numero para repetir el mensaje "));
+let numero1 = parseInt(prompt("ingrese un numero para repetir el mensaje "));
 
 for (let i =1; i <= numero1; i++){
     console.log ("Buen dia")
-}*/
+}

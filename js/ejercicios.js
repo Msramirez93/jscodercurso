@@ -28,8 +28,8 @@ for(let i =1; i<=10; i++){
 }*/
 
 /*for(let i = 1; i <= 20; i++){
-     let ingresaNombre = prompt("Ingresar Nombre");
-     alert(" Turno N° "+i+"Nombre: "+" "+ingresaNombre);
+    let ingresaNombre = prompt("Ingresar Nombre");
+    alert(" Turno N° "+i+"Nombre: "+" "+ingresaNombre);
 }*/
 
 //let entrada = prompt("Ingresar un dato");
