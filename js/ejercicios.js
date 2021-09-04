@@ -65,6 +65,6 @@ for(let i =1; i<=10; i++){
                 alert("¿QUIEN SOS?")
                 break;
     }
-    entrada = prompt("ingresar un nombre");
+    entrada = prompt("ingresar un nombre");g
 }*/
 /* ejercicios de la clase 3*/
