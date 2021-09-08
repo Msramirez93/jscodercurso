@@ -1,4 +1,5 @@
 @import "home";
+@import "class4";
 @import "fonts";
 
 body{
@@ -17,9 +18,9 @@ footer{
 }
 header, 
 footer{
- border:1px solid #bbb;
- padding: 1rem;
- background-color: #bbacc1;
+    border:1px solid #bbb;
+    padding: 1rem;
+    background-color: #bbacc1;
 }
 h2, li{
     
