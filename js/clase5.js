@@ -83,7 +83,7 @@ do {
         '   Stock PRODUCTOS   \n'+
         '1: Clases de ingles nivel 1\n'+
         '2: Clases de Portugues nivel 1\n'+
-        '3: Clases de ingles avanzado\n'+
+        '3: Clases de ingles avanzado con un 20% de descuento \n'+
         '\n'+
         '4: Ver carrito\n'+
         '5: Salir'));
@@ -123,11 +123,32 @@ break;
 case 3:
     cantidad =  parseInt(product(adengID , adengPrice));
                                 
-    if(cantidad <= adengStock){
-let adengSubTotal = (adengPrice*cantidad)
-    alert (`${adengName}\nsubTotal: $${adengSubTotal.toFixed(2)} Pesos`)
+if(cantidad <= adengStock){
+    function Producto(adengID,adengName, adengPrice) {
+        this.adengID = adengID;
+        this.adengName= adengName;
+        this.adengPrice = adengPrice;
+        this.descuento = function(valor){
+                this.adengPrice -=valor;
+            }
+    }
+    
+class ProductoClase{
+    constructor(adengID,adengName,adengPrice){
+            this.adengID = adengID;
+            this.adengName= adengName;
+            this.adengPrice = adengPrice;
+        }
+        descuento(valor){
+            this.adengPrice -=valor;
+        }
+    }
+    const prodClass = new ProductoClase(3,'clases de ingles avanzado',300);
+    console.log('su precio final para la clase de ingles avanzado  es:'+" " +prodClass.adengPrice);
+    prodClass.descuento(prodClass.adengPrice*0.2);
+    console.log('su precio final con descuento para ingles avanzado es:'+ " " +prodClass.adengPrice);
     cantProducts(cantidad, menuOpciones);
-    total(adengSubTotal);
+    total(prodClass.adengPrice);
 }else{
     alert('ERROR')
 }
@@ -157,7 +178,7 @@ break;
 }
 while(menuOpciones != 5);
 
-/* funcion constructora o metedo recibe ambos nombres*/ 
+/* funcion constructora o metedo recibe ambos nombres
 function Producto(adengID,adengName, adengPrice) {
     this.adengID = adengID;
     this.adengName= adengName;
@@ -178,7 +199,7 @@ class ProductoClase{
     }
 }
 const prodClass = new ProductoClase(3,'clases de ingles avanzado',300);
-alert('su precio final es:'+" " +prodClass.adengPrice);
+alert('su precio final para la clase de ingles avanzado  es:'+" " +prodClass.adengPrice);
 prodClass.descuento(prodClass.adengPrice*0.2);
-alert('su precio final con descuento para ingles avanzado es:'+ " " +prodClass.adengPrice);
+alert('su precio final con descuento para ingles avanzado es:'+ " " +prodClass.adengPrice);*/ 
 
