@@ -49,6 +49,7 @@ document.write("<h2> El producto con Iva es: $ "+ precioConIvaM + "</h2>" )
 
 
 
+
 /*const suma  = (a,b) => a + b;
 const resta = (a,b) => a - b;
 // //Si una función es una sola línea con retorno y un parámetro puede evitar escribir los ()

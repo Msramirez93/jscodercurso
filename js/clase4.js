@@ -37,7 +37,7 @@ let adengCant = 0;
 
 // Funciones
 const product = (name, price) => {
-    return prompt (`${name}: $${price.toFixed(2)} PESOS\nIngresar Cantidad`);
+    return prompt (`${name}: $${price.toFixed(2)} PESOS\nIngresar Cantidad de vacantes`);
 }
 
 
