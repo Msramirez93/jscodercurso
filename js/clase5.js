@@ -25,19 +25,19 @@ alert( "EL PRODUCTO ID" + prod1.id +
         );*/
 
 alert ("Benvenidos a tu cursolandia");
-
+//engp = ingles
 let engpID = 1;
 let engpPrice = 150;
 let engpName = 'clases de ingles';
 let engpStock = 20;
 let engpCant = 0;
-        
+//port = portugues
 let portID = 2;
 let portPrice = 150;
 let portName = 'clases de portugues';
 let portStock = 20;
 let portCant = 0;
-        
+//adeng= ad (avanzado) ingles 
 let adengID = 3;
 let adengPrice = 300;
 let adengName = 'clases de ingles avanzado';
@@ -83,7 +83,7 @@ do {
         '   Stock PRODUCTOS   \n'+
         '1: Clases de ingles nivel 1\n'+
         '2: Clases de Portugues nivel 1\n'+
-        '3: Clases de ingles avanzado con un 20% de descuento \n'+
+        '3: Clases de ingles avanzado con un 20% de descuento\n'+
         '\n'+
         '4: Ver carrito\n'+
         '5: Salir'));
