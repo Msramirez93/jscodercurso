@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#bgcurso{
+    background-color: beige;
+}
+
+
+
+.proyecto  {
+    background-color: #4d4861; 
+    color: rgb(0, 0, 0, 0.8);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    height: 100px;
+    margin: 10px;
+    border: 2px solid black;
+}
+/* NAVIGATION HERE  */
+nav button {
+    margin: .3rem 3%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #edcb96; /*accent2-color*/
+}
+nav button:hover{
+    cursor: pointer;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+    background-color: #03254e; /*accent1-color*/
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+    nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li a {
+    display:  block;
+    padding: 8rem 2%;
+    text-decoration: none;
+    color: black;
+    border-top: 1px solid rgb(0, 0, 0, 0.3);
+    padding: 10px;
+    font-family:'Noto Sans JP', sans-serif;
+}
+nav ul li.active a {
+    background-color: #fecee9; /*accent2-color*/
+    color: #121212;
+}
+nav ul li a:hover {
+    background-color: #fecee9; /*accent2-color*/
+    cursor: pointer;
+    color:#000;
+}
+nav ul.hide {
+    display: none;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.healine{
+    margin: 10px;
+    
+}
+.textoRelleno {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 10px 13px 100px 11px;
+    padding: 10px
+}
+@media only screen and (min-width: 629px) {
+    nav button {
+        display: none;
+    }
+
+    nav ul {
+        margin-left: 2%;
+    }
+    nav ul li {
+        float: left;
+    }
+
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.3);
+        padding: .8rem 1rem;
+    }
+
+    nav ul.hide {
+        display: block;
+    }
+}
+@media only screen and (min-width: 1025px){
+
+    nav ul li a {
+        padding: .6rem 1rem;
+        
+    }
+}
+
+footer {
+    text-align: center;
+    background: #9e7682; /*accent1-color*/
+    padding: 10px;
+    color: black;
+}

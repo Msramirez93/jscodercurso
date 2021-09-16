@@ -1,6 +1,7 @@
 @import "home";
 @import "class4";
 @import "fonts";
+@import "proyec";
 
 body{
     font-size: 16px;
@@ -10,14 +11,12 @@ body{
     margin:0;
     padding: 0;
 }
-header,
-main,
-footer{
+.encabezado,
+main{
     max-width: 760px;
     margin: 0 auto;
 }
-header, 
-footer{
+.encabezado{
     border:1px solid #bbb;
     padding: 1rem;
     background-color: #bbacc1;
