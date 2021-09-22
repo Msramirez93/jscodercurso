@@ -2,22 +2,28 @@ alert ("Benvenidos a tu cursolandia");
 //engp = ingles
 let engpID = 1;
 let engpPrice = 150;
-let engpName = 'clases de ingles';
+let engpName = 'clases de Ingles';
 let engpStock = 20;
 let engpCant = 0;
 //port = portugues
 let portID = 2;
 let portPrice = 150;
-let portName = 'clases de portugues';
+let portName = 'clases de Portugues';
 let portStock = 20;
 let portCant = 0;
 //adeng= ad (avanzado) ingles 
 let adengID = 3;
 let adengPrice = 300;
-let adengName = 'clases de ingles avanzado';
+let adengName = 'clases de Ingles avanzado';
 let adengStock = 10;
 let adengCant = 0;
-        
+// avanport =(avanzado) portugues 
+let avanportID = 4;
+let avanportPrice = 300;
+let avanportName= 'clases de Portugues avanzado';
+let avanportStock= 10;
+let avanportCant =0;
+
         
 // Funciones
 const product = (name, price) => {
@@ -69,15 +75,16 @@ let menuOpciones = 0;
 do {
     menuOpciones = parseInt(prompt(
         '   Stock PRODUCTOS   \n'+
-        '1: Clases de ingles nivel 1\n'+
+        '1: Clases de Ingles nivel 1\n'+
         '2: Clases de Portugues nivel 1\n'+
-        '3: Clases de ingles avanzado con un 20% de descuento\n'+
+        '3: Clases de Ingles avanzado con un 20% de descuento\n'+
+        '4: Clases de Portuges avanzado con un 20% de descuento\n'+
         '\n'+
-        '4: Ver carrito\n'+
-        '5: Salir'));
+        '5: Ver carrito\n'+
+        '6: Salir'));
         
 let cantidad = 0;
-switch(menuOpciones){
+switch(menuOpciones){//ingles inicial
     case 1:
     cantidad =  parseInt(product(engpID , engpPrice));
                                 
@@ -91,7 +98,7 @@ switch(menuOpciones){
     alert('ERROR')
 }
 break;
-                
+//portugues inicial                
 case 2:
         cantidad =  parseInt(product(portName, portPrice));
                                 
@@ -105,7 +112,7 @@ case 2:
 }
 break;
                 
-                
+//ingles avanzado               
 case 3:
     cantidad =  parseInt(product(adengID , adengPrice));
                                 
@@ -115,8 +122,8 @@ if(cantidad <= adengStock){
         cantProducts(cantidad, menuOpciones);
         total(adengSubTotal);
         
-        /*console.log('su precio final para la clase de ingles avanzado  es:'+" " +prodClass.adengPrice);
-    prodClass.descuento(prodClass.adengPrice*cantidad*0.2);
+    /*console.log('su precio final para la clase de ingles avanzado  es:'+" " +prodClass.adengPrice);
+    prodClass.descuento((prodClass.adengPrice*0.2)*cantidad);
     console.log('su precio final con descuento para ingles avanzado es:'+ " " +prodClass.adengPrice);
     cantProducts(cantidad, menuOpciones);
     total(prodClass.adengPrice);*/
@@ -126,20 +133,30 @@ if(cantidad <= adengStock){
 break;
         
         
+//portugues avanzado
+case 4:
+    cantidad =  parseInt(product(avanportID , avanportPrice));
+                                
+    if(cantidad <= avanportStock){
+        let avanportSubTotal = ((avanportPrice*0.2)*cantidad);
+            alert (`${avanportName}\nsubTotal: $${avanportSubTotal.toFixed(2)} Pesos`);
+            cantProducts(cantidad, menuOpciones);
+            total(avanportSubTotal);
+}
 // Carrito
-case 4: 
+case 5: 
     let opcCarrito = parseInt(shopCart(cantProductsTotal))
                     
 if (opcCarrito == 1){
     alert('Gracias por su compra!!')
-    menuOpciones = 5;
+    menuOpciones = 6;
 }
 break;
                 
 // Salir    
-case 5:
+case 6:
     alert('Muchas gracias por elegirnos!!');
-menuOpciones = 5;
+menuOpciones = 6;
 break;
                 
 default:
@@ -147,7 +164,7 @@ default:
 break;
     }
 }
-while(menuOpciones != 5);
+while(menuOpciones != 6);
 
 class Producto {
     constructor(id, nombre, precio) {
@@ -161,5 +178,6 @@ const productos=[];//Declarar un array vacio
 productos.push(new Producto(1, "Clase de ingles basico",150 ));
 productos.push(new Producto(2, "Clase de portugues", 150));
 productos.push(new Producto(3, "Clase de ingles avazando", 300));
+productos.push(new Producto(4, "Clase de portugues avanzado",300));
 
 console.log(productos);

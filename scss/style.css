@@ -119,6 +119,46 @@ nav ul.hide {
   padding: 10px;
 }
 
+.estilo {
+  color: green;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.bananas {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 10px auto;
+}
+
+.headlinePro {
+  margin: 20px;
+  border-top: 5px double;
+  border-bottom: 5px double;
+  padding: 0.3em;
+  background-color: #222e50;
+  color: white;
+  font-size: 1.5;
+  text-align: center;
+}
+
+.maestra {
+  margin: 10px;
+  height: 400px;
+  border: 1px solid #9e7682;
+}
+
+.introduccionMaestra {
+  margin: 10px;
+  font-size: 1.2rem;
+  color: #000;
+  text-align: center;
+}
+
 @media only screen and (min-width: 629px) {
   nav button {
     display: none;

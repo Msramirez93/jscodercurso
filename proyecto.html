@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="scss/style.css">
     <title>Proyecto</title>
 </head>
@@ -28,24 +29,59 @@
 
     </nav>
     <main>
-        <h1 class="headline">
+        <h1 id="titulo" class="titulo">
             Clases de Ingles y Portugues
         </h1>
-        <p class="textoRelleno">En esta parte del html estaria hubicado los distintos cursos y sus costos
-            ademas de la informacion necesaria del profesor que brindara las clases
-        </p>
-    </main>
+        <hr>
+    
+        <div id="contenedor" class="row container">
+            
+        </div>
+    
+        <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">id</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Tipo</th>
+                <th scope="col">Precio</th>
+            </tr>
+        </thead>
+            <tbody id="tabla-contenedor">
+            
+            </tbody>
+        </table>
+    <div class="container-fluid">
+    <div class="col-reverse">
+        <div class="row bananas">
+            <h1 class="col-12 headlinePro">Profersora</h1>
+            <h2 class="col-10 headlinePro">Thais Ramirez</h2>
+            <p class="introducionMaestra ">
+                Tengo 22 años, soy de Buenos Aires,Argentina, tengo experiencia hablando ingles ya que estudio en la
+                Universidad de BYU-I, tambien he tenido la oportunidad de vivir por 18 meses en Brasil, Sou paulo debido a mi religion,
+                pero me ha ayudado a poder comprender, hablar y escribir el Portugues, actualmente no tengo una certificacion
+                como profesora pero mi proposito es dar una ayuda a quienes estan interesados en aprender lo mas basico de ambos idiomas,
+                brindadoles herramientas necesarias para poder comenzar.
+            </p>
+            <img class="maestra" src="./images/thais.jpg" alt="maestra">
+        </div>
+    </div>
+</div>
+</main>
     <footer>
         <div class="footer">
             &copy;
             <span id="date"></span>
-            | Melany Salome Ramirez|Buenos Aires,Argentina
+            | Melany Salome Ramirez |Buenos Aires,Argentina
         </div>
 
         <p>Last Modified: <span id="lastmod"></span></p>
     </footer>
     <script src="js/date.js"></script>
     <script src="js/proyecto.js"></script>
+    <script src="js/apps.js"></script>
+    <script src="js2/jquery-3.5.1.slim.min.js"></script>
+    <script src="js2/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
