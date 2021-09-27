@@ -22,9 +22,8 @@
     <nav>
         <button onclick="toggleMenu()">&#9776;</button>
         <ul id="menu" class="hide">
-            <li class="active"><a href="proyecto.html">home</a></li>
-            <li><a href="#">Ingles</a></li>
-            <li><a href="#">Portugues</a></li>
+            <li class="active"><a href="proyecto.html">Home</a></li>
+            <li><a href="proyecto.html#contacto">Contactame</a></li>
         </ul>
 
     </nav>
@@ -64,9 +63,34 @@
                 brindadoles herramientas necesarias para poder comenzar.
             </p>
             <img class="maestra" src="./images/thais.jpg" alt="maestra">
+            <button class="col-7"id="contacto" id="boton">contacto</button>
         </div>
     </div>
 </div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <div class="formulario col-12 col-md-8">
+                <form  id="formulario" method="get" action="recibe.html"><!--esta linkeado al event submit y tambien le cree una pag para que lo reciba -->
+                    <fieldset>
+                        <label>Inscripcion</label>
+                        <label class="first">Nombre Completo:
+                            <input type="text" name="full-name" required pattern="[\sA-Za-z]{5,}" /></label>
+                        <label class="first">Email:
+                            <input type="email" name="email" placeholder="happyday@gmail.com" /></label>
+                        <label class="first">Numero de celular:
+                            <input type="tel" name="phone" placeholder="***-***-****" required /></label>
+                        <label class="first">Codigo Postal:
+                            <input type="number" name="zip" pattern="(\d{5}([\-]\d{4})?)"
+                                placeholder="Insert Zip code" /></label>
+                        <label class="first">Comentarios o dudas:
+                            <textarea name="comments" id="comments" class="first textarea"></textarea></label>
+                        <input type="submit" value="Enviar" class="buttonForm" />
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
 </main>
     <footer>
         <div class="footer">
@@ -77,10 +101,9 @@
 
         <p>Last Modified: <span id="lastmod"></span></p>
     </footer>
-    <script src="js/date.js"></script>
-    <script src="js/proyecto.js"></script>
+    <script src="js/date.js"></script><!--este es el js para la actuliazacion de la fecha-->
     <script src="js/apps.js"></script>
-    <script src="js2/jquery-3.5.1.slim.min.js"></script>
+    <script src="js2/jquery-3.5.1.slim.min.js"></script><!--estos dos ultimos los de bootstrap-->
     <script src="js2/bootstrap.bundle.min.js"></script>
 </body>
 

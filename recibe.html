@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="scss/style.css">
+    <title>recibe</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="menu" class="hide">
+                <li class="active"><a href="proyecto.html">home</a></li>
+                <li><a href="#">Ingles</a></li>
+                <li><a href="#">Portugues</a></li>
+                <li><a href="#">Contactame</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <div class="containerfluid">
+        <div class="col-10">
+            <div class="row">
+                <div class="card col-10" style="width: 18rem; margin: 10px;">
+                    <img src="./images/ingles2.jpg" class="card-img-top " alt="card1">
+                    <div class="card-body">
+                        <p class="card-text">We will be answering as soon as possible, we invite you to continue
+                            browsing
+                            our site!!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            &copy;
+            <span id="date"></span>
+            | Melany Salome Ramirez |Buenos Aires,Argentina
+        </div>
+
+        <p>Last Modified: <span id="lastmod"></span></p>
+    </footer>
+    <script src="js/date.js"></script>
+    <script src="js2/jquery-3.5.1.slim.min.js"></script>
+    <!--estos dos ultimos los de bootstrap-->
+    <script src="js2/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -19,7 +19,9 @@ stockProductos.forEach( (prod) => {
 
     const div = document.createElement('div')
     div.className = "card"
-    div.style = "width: 18rem"
+    div.style = "width: 18rem "
+
+    //utiliza el boton onclick en agregar al carrito
 
     div.innerHTML = `
             <img src="./images/ingles1.jpg" class="card-img-top" alt="...">
@@ -27,13 +29,14 @@ stockProductos.forEach( (prod) => {
                 <h5 class="card-title">${prod.nombre}</h5>
                 <p class="card-text">${prod.desc}</p>
                 <p class="card-text">Precio: $${prod.precio}</p>
-                <button onclick="agregarAlCarrito(${prod.id})" class="btn btn-dark"> Agregar al carrito </button> 
+                <button onclick="agregarAlCarrito(${prod.id})" class="btn btn-dark bttcompra"> Agregar al carrito </button> 
             </div>
     `
     contenedor.appendChild(div)
 
 })
-
+let botones = document.getElementsByClassName('bttcompras');
+console.log(botones);
 
 const carrito = []
 
@@ -62,6 +65,12 @@ const mostrarCompra = () => {
     })
 
 }
+//validar el formulario que nos lleva a la pagina recibe.html
+let miFormulario = document.getElementById ("formulario");
+miFormulario.addEventListener("submit",validarFormulario);
 
-
+function validarFormulario (e){
+    e.preventDeFault();
+    console.log("Formulario Enviando");
+}
 

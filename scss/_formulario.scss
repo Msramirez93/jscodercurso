@@ -1,0 +1,44 @@
+.formulario {
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: #ffffff52;
+    border-radius: 30px;
+}
+.storm1 {
+    font-size: 25px;
+}
+form fieldset {
+    margin: 11px;
+    /*border: 8px solid black;*/
+    padding: 1rem 1.5%;
+    background-color: transparent;
+}
+form legend {
+    color: #1b1a1a;
+    font-size: 20px;
+    margin: 0 1rem 1rem;
+    padding: 0.5rem 0.5rem 0rem;
+}
+form label.first {
+    display: block;
+    padding-top: 1rem;
+    color: #251e1e;
+    font-size: 15px;
+}
+form label.first input {
+    display: block;
+    width: 90%;
+    padding: 5px 5px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+.buttonForm{
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.textarea{
+    margin: 10px;
+    width: 90%;
+}
