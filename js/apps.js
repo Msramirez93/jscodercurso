@@ -24,12 +24,11 @@ stockProductos.forEach( (prod) => {
     //utiliza el boton onclick en agregar al carrito
 
     div.innerHTML = `
-            <img src="./images/ingles1.jpg" class="card-img-top" alt="...">
+            <img src="${produto.img}" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">${prod.nombre}</h5>
-                <p class="card-text">${prod.desc}</p>
-                <p class="card-text">Precio: $${prod.precio}</p>
-                <button onclick="agregarAlCarrito(${prod.id})" class="btn btn-dark bttcompra"> Agregar al carrito </button> 
+                <h4 class="card-title">${producto.nombre}</h4>
+                <p class="card-text">Precio: $${producto.precio}</p>
+                <button onclick="agregarAlCarrito(${producto.id})" class="btn btn-dark bttcompra"> Agregar al carrito </button> 
             </div>
     `
     contenedor.appendChild(div)

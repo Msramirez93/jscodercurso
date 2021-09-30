@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css" />-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="scss/style.css">
     <title>Proyecto</title>
 </head>
@@ -32,25 +33,18 @@
             Clases de Ingles y Portugues
         </h1>
         <hr>
-    
-        <div id="contenedor" class="row container">
+        <div class="dropdown" >
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="botonCarrito" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Carrito <span id="carritoCantidad" class="badge badge-light">0</span>
+            </button>
+            <div  id= "carritoProductos" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             
+            </div>
         </div>
-    
-        <table class="table">
-        <thead>
-            <tr>
-                <th scope="col">id</th>
-                <th scope="col">Nombre</th>
-                <th scope="col">Tipo</th>
-                <th scope="col">Precio</th>
-            </tr>
-        </thead>
-            <tbody id="tabla-contenedor">
-            
-            </tbody>
-        </table>
-    <div class="container-fluid">
+        <div id="productosContenedor" class="card-columns row container col-10">            
+            <!--PRODUCTOS-->
+        </div>
+<div class="container-fluid">
     <div class="col-reverse">
         <div class="row bananas">
             <h1 class="col-12 headlinePro">Profersora</h1>
@@ -101,10 +95,17 @@
 
         <p>Last Modified: <span id="lastmod"></span></p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <!--<script src="jsBootstrap/jquery-3.5.1.slim.min.js"></script>estos dos ultimos los de bootstrap-->
+    <!--<script src="jsBootstrap/bootstrap.bundle.min.js"></script>-->
     <script src="js/date.js"></script><!--este es el js para la actuliazacion de la fecha-->
-    <script src="js/apps.js"></script>
-    <script src="js2/jquery-3.5.1.slim.min.js"></script><!--estos dos ultimos los de bootstrap-->
-    <script src="js2/bootstrap.bundle.min.js"></script>
+    <script src="js/productos.js"></script>
+    <script src="js/funciones.js"></script>
+    <script src="js/globales.js"></script>
+    <script src="js/main.js"></script>
+    
+    <!--<script src="js/apps.js"></script>-->
+    
 </body>
-
 </html>
