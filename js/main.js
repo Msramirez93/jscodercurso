@@ -3,7 +3,7 @@
 $('#productosContenedor').hide();
 
 //Utilizo una llamada asincrona desde JSON
-$.get("../data/productos.json", function (respuesta, estado) {
+$.get("data/productos.json", function (respuesta, estado) {
     console.dir(respuesta);   
     console.log(estado);
     
