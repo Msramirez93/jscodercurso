@@ -5,6 +5,13 @@ class Producto {
             this.nombre = nombre;
             this.precio = parseFloat(precio);
             this.images= images;
-            
+            this.cantidad= 1;
+        }
+        agregarCantidad(valor){
+            this.cantidad += valor; 
+        }
+        subtotal(){
+            return this.cantidad * this.precio;
+        }
     }
-}
+

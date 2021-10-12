@@ -12,6 +12,7 @@
 </head>
 
 <body id="bgcurso">
+    
     <header class="proyecto">
         <img class="logo" src="images/logo2.gif" alt="logo del sitio">
         <div>
@@ -24,14 +25,26 @@
         <button onclick="toggleMenu()">&#9776;</button>
         <ul id="menu" class="hide">
             <li class="active"><a href="proyecto.html">Home</a></li>
-            <li><a href="proyecto.html#contacto">Contactame</a></li>
+            <li><a href="proyecto.html#contactoform">Contactame</a></li>
         </ul>
 
     </nav>
     <main>
+        <div class="container">
         <h1 id="titulo" class="titulo">
             Clases de Ingles y Portugues
         </h1>
+        <hr>
+        <a id="Contacto">Ir a contacto</a>
+        <p id="ejemplo" >INSPECCIONAR PARA VER SALIDAS POR CONSOLA (F12)</p>
+        <hr>
+        <button id= "boton1">Ver Oferta</button> <!--boton de oferta-->
+        <div id = "ejemplo2"  class="jumbotron jumbotron-fluid">
+            <div class="container">
+            <h1 class="display-4">Fluid jumbotron</h1>
+            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+            </div>
+        </div>
         <hr>
         <div class="dropdown" >
             <button class="btn btn-secondary dropdown-toggle" type="button" id="botonCarrito" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -44,6 +57,12 @@
         <div id="productosContenedor" class="card-columns row container col-10">            
             <!--PRODUCTOS-->
         </div>
+        <!--SPINNER-->
+        <div id= "espera" class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+
+    </div>
 <div class="container-fluid">
     <div class="col-reverse">
         <div class="row bananas">
@@ -57,14 +76,14 @@
                 brindadoles herramientas necesarias para poder comenzar.
             </p>
             <img class="maestra" src="./images/thais.jpg" alt="maestra">
-            <button class="col-7"id="contacto" id="boton">contacto</button>
+            <!--<button class="col-7" id="boton">contacto</button>-->
         </div>
     </div>
 </div>
 <div class="container-fluid">
     <div class="row">
         <div class="col">
-            <div class="formulario col-12 col-md-8">
+            <div class="formulario col-12 col-md-8" id="contactoform">
                 <form  id="formulario" method="get" action="recibe.html"><!--esta linkeado al event submit y tambien le cree una pag para que lo reciba -->
                     <fieldset>
                         <label>Inscripcion</label>
@@ -85,6 +104,12 @@
             </div>
         </div>
     </div>
+    <a id="arriba">Ir a inicio</a>
+    <div id="contenidoContacto">
+        <h4>Contacto asasa</h4>
+    </div>
+</div>
+
 </main>
     <footer>
         <div class="footer">
@@ -92,17 +117,14 @@
             <span id="date"></span>
             | Melany Salome Ramirez |Buenos Aires,Argentina
         </div>
-
         <p>Last Modified: <span id="lastmod"></span></p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-    <!--<script src="jsBootstrap/jquery-3.5.1.slim.min.js"></script>estos dos ultimos los de bootstrap-->
-    <!--<script src="jsBootstrap/bootstrap.bundle.min.js"></script>-->
     <script src="js/date.js"></script><!--este es el js para la actuliazacion de la fecha-->
-    <script src="js/productos.js"></script>
-    <script src="js/funciones.js"></script>
     <script src="js/globales.js"></script>
+    <script src="js/funciones.js"></script>
+    <script src="js/productos.js"></script>
     <script src="js/main.js"></script>
     
     <!--<script src="js/apps.js"></script>-->
