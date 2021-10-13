@@ -5,10 +5,10 @@ function productosUI(productos, id){
                     <img src="${producto.images}" class="card-img-top" alt="...">
                     <div class="card-body">
                     <h4 class="card-title">${producto.nombre}</h4>
-                    <p class="card-text">Precio: $${producto.precio}</p> 
+                    <p class="card-text">${producto.precio}</p> 
                     <span class="badge badge-warning">
-                                    ${producto.categoria}</span>                   
-                                    <a href="#" id='${producto.id}' class="btn btn-primary btn-compra">COMPRAR</a> 
+                                ${producto.categoria}</span>                                           
+                    <a href="#" id='${producto.id}' class="btn btn-primary btn-compra">COMPRAR</a>
                     </div>
                     </div>`);
     }
@@ -18,7 +18,7 @@ function comprarProducto(event){
     
     event.preventDefault();
     
-    const idProducto   = event.target.id;
+    const idProducto  = event.target.id;
     
     const existe=carrito.find(producto => producto.id ==idProducto);
     
@@ -45,8 +45,6 @@ function carritoUI(productos){
                                     Cantidad: ${producto.cantidad}</span>
                                     <span class="badge badge-success">
                                     Subtotal: ${producto.subtotal()}</span>                                
-                                    
-                                    
                                     </p>`);
     }
 }
@@ -57,7 +55,7 @@ $("#btnConfirmar").on("click",enviarCompra);
 
 //Creo una funcion para manejar el evento click en el boton confirmar
 function enviarCompra() {
-    $.post("https://jsonplaceholder.typicode.com/posts",JSON.stringify(carrito),function(respuesta,estado) {
+    $.post("https://github.com/Msramirez93/jscodercurso/blob/main/data/productos.json",JSON.stringify(carrito),function(respuesta,estado) {
         console.log(estado);
         console.log(respuesta);
         
@@ -81,7 +79,7 @@ function enviarCompra() {
     
     function buscarCategoria() {
     
-    //----------Codigo de filtro con animaciones  
+    //----------filtro con animaciones  
     let valor=this.value;
     
     $("#productosContenedor").fadeOut(2000,function () {

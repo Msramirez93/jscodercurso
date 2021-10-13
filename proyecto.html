@@ -50,14 +50,22 @@
             </div>
         </div>
         <hr>
-        <div class="dropdown" >
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            CARRITO <span id="carritoCantidad" class="badge badge-light">0</span>
+            </button>
+            <div id="carritoProductos" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <!--ACA SE GENERAN LOS ELEMENTOS DEL CARRITO-->
+            </div>
+        </div>
+        <!--<div class="dropdown" >
             <button class="btn btn-secondary dropdown-toggle" type="button" id="botonCarrito" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Carrito <span id="carritoCantidad" class="badge badge-light">0</span>
             </button>
             <div  id= "carritoProductos" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             
             </div>
-        </div>
+        </div>-->
         <div id="productosContenedor" class="card-columns row container col-10">            
             <!--PRODUCTOS-->
         </div>
@@ -123,6 +131,7 @@
         <p>Last Modified: <span id="lastmod"></span></p>
     </footer>
     <script src="js/jquery-3.6.0.js"></script>
+    <script src="jsBootstrap4.6/bootstrap.bundle.js"></script>
     <script src="js/date.js"></script><!--este es el js para la actuliazacion de la fecha-->
     <script src="js/globales.js"></script>
     <script src="js/funciones.js"></script>
