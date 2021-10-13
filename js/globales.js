@@ -1,4 +1,3 @@
-//VARIABLES DE ACCESO GLOBAL
+//VARIABLES GLOBALES
 const productos = [];
-const carrito = [];
-const categorias = ['inicial','avanzados'];
+let carrito = [];

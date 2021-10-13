@@ -1,12 +1,11 @@
 //DECLARACIÓN DE CLASE PRODUCTO
 class Producto {
-    constructor(id, nombre, precio, images,categoria) {
+    constructor(id, nombre, precio,cantidad,images) {
             this.id = parseInt(id);
             this.nombre = nombre;
             this.precio = parseFloat(precio);
+            this.cantidad= parseInt(cantidad);
             this.images= images;
-            this.cantidad= 1;
-            this.categoria=categoria;
         }
         agregarCantidad(valor){
             this.cantidad += valor; 
