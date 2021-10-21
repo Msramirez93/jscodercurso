@@ -5,13 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css4.6/bootstrap.css">
     <link rel="stylesheet" href="scss/style.css">
     <title>recibe</title>
 </head>
 
 <body>
-    <header>
+    <header class="proyecto">
+        <a href="proyecto.html"><img class="logo" src="images/logo2.gif" alt="logo del sitio"></a>
+        <div>
+            <h1>
+                Gracias por unirte a Cursolandia!!
+            </h1>
+        </div>
+    </header>
         <nav>
             <button onclick="toggleMenu()">&#9776;</button>
             <ul id="menu" class="hide">
@@ -20,16 +27,14 @@
             </ul>
 
         </nav>
-    </header>
     <div class="containerfluid">
-        <div class="col-10">
+        <div class="col-12">
             <div class="row">
                 <div class="card col-10" style="width: 18rem; margin: 10px;">
-                    <img src="./images/ingles2.jpg" class="card-img-top " alt="card1">
+                    <img src="./images/ingles2.jpg" class="card-img-top img-recibe" alt="card1">
                     <div class="card-body">
-                        <p class="card-text">We will be answering as soon as possible, we invite you to continue
-                            browsing
-                            our site!!
+                        <p class="card-text">Te contestaremos lo mas pronto posible te invitamos a que sigas navegando por nuestro sitio
+                        
                         </p>
                     </div>
                 </div>
@@ -46,9 +51,8 @@
         <p>Last Modified: <span id="lastmod"></span></p>
     </footer>
     <script src="js/date.js"></script>
-    <script src="js2/jquery-3.5.1.slim.min.js"></script>
-    <!--estos dos ultimos los de bootstrap-->
-    <script src="js2/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="jsBootstrap4.6/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

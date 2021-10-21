@@ -5,8 +5,8 @@ function productosUI(productos, id){
                     <img src="${producto.images}" class="card-img-top" alt="...">
                     <div class="card-body">
                     <h4 class="card-title">${producto.nombre}</h4>
-                    <p class="card-text">${producto.precio}</p> 
-                    <a href="#" id='${producto.id}' class="btn btn-primary btn-compra">COMPRAR</a>
+                    <p class="card-text">$${producto.precio}</p> 
+                    <a href="#" id='${producto.id}' class="btn btn-dark btn-compra">COMPRAR</a>
                     </div>
                     </div>`);
     }
@@ -43,14 +43,14 @@ function comprarProducto(e){
   }
   //FUNCION PARA GENERAR LA ESTRUCTURA DEL REGISTO HTML
 function registroCarrito(producto){
-    return `<p> ${producto.nombre} 
-            <span class="badge badge-warning">$ ${producto.precio}</span>
+    return `<p>   ${producto.nombre} 
+            <span class="badge badge-warning">$${producto.precio}</span>
             <span class="badge badge-dark">${producto.cantidad}</span>
-            <span class="badge badge-success"> $ ${producto.subtotal()}</span>
-            <a id="${producto.id}" class="btn btn-info btn-add" > + </a> 
-            <a id="${producto.id}" class="btn btn-warning btn-sub" > - </a> 
-            <a id="${producto.id}" class="btn btn-danger btn-delete"> x </a>         
-            </p>`
+            <span class="badge badge-success"> $${producto.subtotal()}</span>
+            <a id="${producto.id}" class="btn btn-light btn-add" > + </a> 
+            <a id="${producto.id}" class="btn btn-light btn-sub" > - </a> 
+            <a id="${producto.id}" class="btn btn-danger btn-delete"> x </a>
+          </p>`
 }
   //Funcion Eliminar
 function eliminarCarrito(event) {

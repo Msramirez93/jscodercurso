@@ -1,4 +1,4 @@
-[{"id":1, "nombre":"clases de ingles nivel inicial","precio": 150,"imagen":"./images/ingles1.jpg", "categoria ": "inicial", "cantidad":1},
+[{"id":1, "nombre":"clases de ingles para nivel inicial","precio": 150,"imagen":"./images/ingles1.jpg", "categoria ": "inicial", "cantidad":1},
 {"id":2, "nombre":"clases  de portugues nivel inicial","precio": 150,"imagen":"./images/portugues1.jpg","categoria ": "inicial", "cantidad":1}, 
-{"id":3,"nombre":"clases de ingles avanzado","precio": 300,"imagen":"./images/ingles21.jpg","categoria ":"avanzado", "cantidad": 1},
-{"id":4,"nombre":"clases de portugues avanzado", "precio" :300,"imagen":"./images/portugues2.jpg", "categoria ":"avanzado", "cantidad":1}]
+{"id":3,"nombre":"clases de ingles nivel  avanzado","precio": 300,"imagen":"./images/ingles21.jpg","categoria ":"avanzado", "cantidad": 1},
+{"id":4,"nombre":"clases de portugues nivel avanzado", "precio" :300,"imagen":"./images/portugues2.jpg", "categoria ":"avanzado", "cantidad":1}]

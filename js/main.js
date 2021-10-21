@@ -1,8 +1,7 @@
 
 window.addEventListener('load',()=>{
-    //ELIMINAR ELEMENTO DEL DOM
+    //eliminar elemento DOM
     $('#indicadorCarga').remove();
-    //MOSTRAR ELEMENTO CON UN FADE
     $('#productosContenedor').fadeIn("slow",()=>{ console.log('ANIMACION FINALIZADA')});
     
 })
@@ -53,7 +52,7 @@ $(document).ready(function () {
         }, 2000);        
     })
 });
-$("#ejemplo").animate({fontSize: "30px", opacity: 0.4 },3000).delay(2000).fadeOut(2000);
+//$("#ejemplo").animate({fontSize: "30px", opacity: 0.4 },3000).delay(2000).fadeOut(2000);
 $("#boton1").on("click", function () {
     $("#ejemplo2").slideToggle(1500);
 })

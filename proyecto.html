@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<link rel="stylesheet" href="css/bootstrap.min.css" />-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="css4.6/bootstrap.css">
@@ -16,7 +15,7 @@
 <body id="bgcurso">
 
     <header class="proyecto">
-        <img class="logo" src="images/logo2.gif" alt="logo del sitio">
+        <a href="proyecto.html"><img class="logo" src="images/logo2.gif" alt="logo del sitio"></a>
         <div>
             <h1>
                 Bienvenido a Cursolandia!!
@@ -27,7 +26,7 @@
         <button onclick="toggleMenu()">&#9776;</button>
         <ul id="menu" class="hide">
             <li class="active"><a href="proyecto.html">Home</a></li>
-            <li><a href="proyecto.html#contactoform">Contactame</a></li>
+            <li><a href="proyecto.html#contactoform1">Contactame</a></li>
 
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
@@ -48,8 +47,8 @@
                 Clases de Ingles y Portugues
             </h1>
             <hr>
-            <a id="Contacto">Ir a contacto</a>
-            <p id="ejemplo">Bienvenidos a Cursolandia</p>
+            <a id="Contacto" class="btninterno"><h4>Ir a contacto</h4></a>
+            <!--<p id="ejemplo">Bienvenidos a Cursolandia</p>-->
             <hr>
             <button id="boton1">invitacion</button>
             <div id="ejemplo2" class="jumbotron jumbotron-fluid">
@@ -81,7 +80,7 @@
                         brindadoles herramientas necesarias para poder comenzar.
                     </p>
                     <img class="maestra" src="./images/thais.jpg" alt="maestra">
-                    <a class="col-7" id="arriba">Ir a inicio</a>
+                    <a class="col-7" id="arriba" class="btninterno"><h4>Ir a inicio</h4></a>
                     <div class="col-7" id="contenidoContacto">
                         <h4></h4>
                     </div>
@@ -91,9 +90,8 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col">
-                    <div class="formulario col-12 col-md-8" id="contactoform">
+                    <div class="formulario col-12 col-md-8" id="contactoform1">
                         <form id="formulario" method="get" action="recibe.html">
-                            <!--esta linkeado al event submit y tambien le cree una pag para que lo reciba -->
                             <fieldset>
                                 <label>Inscripcion</label>
                                 <label class="first">Nombre Completo:
@@ -123,8 +121,9 @@
         </div>
         <p>Last Modified: <span id="lastmod"></span></p>
     </footer>
-    <script src="js/jquery-3.6.0.js"></script>
-    <script src="jsBootstrap4.6/bootstrap.bundle.js"></script>
+    
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="jsBootstrap4.6/bootstrap.bundle.min.js"></script>
     <script src="js/date.js"></script><!--este es el js para la actuliazacion de la fecha-->
     <script src="js/globales.js"></script>
     <script src="js/funciones.js"></script>
