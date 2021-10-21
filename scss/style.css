@@ -195,11 +195,6 @@ footer {
   color: black;
 }
 
-.img-recibe {
-  height: 400px;
-  width: 600px;
-}
-
 .btninterno, h4, a {
   text-decoration: none;
 }
@@ -208,6 +203,17 @@ a:hover {
   color: none;
   -webkit-text-decoration: noneS;
           text-decoration: noneS;
+}
+
+.img-recibe {
+  margin: 10px;
+}
+
+.mainrecibe {
+  display: flex;
+  align-content: center;
+  margin: 10px 10%;
+  padding: 20px;
 }
 
 .formulario {

@@ -154,10 +154,6 @@ footer {
     padding: 10px;
     color: black;
 }
-.img-recibe{
-    height: 400px;
-    width: 600px ;
-}
 .btninterno ,h4 , a {
     text-decoration: none;
 
@@ -165,4 +161,14 @@ footer {
 a:hover{
     color: none;
 text-decoration: noneS;
+}
+//recibe page
+.img-recibe{
+    margin:10px;
+}
+.mainrecibe{
+    display: flex;
+    align-content: center;
+    margin: 10px 10%;
+    padding: 20px;
 }
